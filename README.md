@@ -36,7 +36,7 @@ Cmake・git・NASMのPachを登録しておく
 
 作成順は、linux→arm-linux→aarch64-linux
 
-① ~$ Desktop && sudo rm -r x265 && git clone https://github.com/Multicorewareinc/x265.git && x265 && build &&  linux && ./make-Makefiles.bash && make
+① ~$ Desktop && sudo rm -r x265 && git clone https://github.com/Multicorewareinc/x265.git && cd x265 && build &&  linux && ./make-Makefiles.bash && make
 
 ② ~$ .. && arm-linux && sudo chmod o+x make-Makefiles.bash && sudo ./make-Makefiles.bash && sudo make
 
