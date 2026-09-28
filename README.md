@@ -12,7 +12,7 @@ x265 ( https://github.com/Multicorewareinc/x265 ) ~~( https://bitbucket.org/mult
 Cmake・git・NASMのPachを登録しておく
 
 ①x265を保存する空フォルダを用意して、空フォルダ内でWindowsターミナル又はコマンドプロンプトを開き、
-` git clone https://bitbucket.org/multicoreware/x265_git.git ` を実行してクローンを作成。(ここでgit必要)
+` git clone https://github.com/Multicorewareinc/x265.git ` を実行してクローンを作成。(ここでgit必要)
 
 ~~x265 古いやつ ` git clone https://bitbucket.org/multicoreware/x265_git.git `~~
 
