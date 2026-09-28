@@ -18,7 +18,7 @@ Cmake・git・NASMのPachを登録しておく
 
 ~~x265のテスト版?のビルドしたい場合は、` git clone https://bitbucket.org/multicoreware/x265_git_testing.git ` こっちを実行。(x265_git_testingってファイルが出来る)~~
 
-②x265_gitってフォルダが作成されるので、`x265_git→build→vc17-x86_64`と移動。 
+②x265ってフォルダが作成されるので、`x265→build→vc18`と移動。 
 
 ~~③フォルダ内の`make-solutions.bat`をメモ帳で開き、 cmake -G "Visual Studio 17 2022" ..\..\source && cmake-gui ..\..\source を cmake -G "Visual Studio 18 2026" ..\..\source && cmake-gui ..\..\source に書き換え。 (Visual Studio 2022でビルドする場合は飛ばす)~~
 
