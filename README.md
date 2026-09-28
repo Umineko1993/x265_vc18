@@ -1,5 +1,5 @@
 # x265_x86_64
-x265_git ( https://bitbucket.org/multicoreware/workspace/projects/PROJ ) をビルドしてます。
+x265 ( https://github.com/Multicorewareinc/x265 ) ~~( https://bitbucket.org/multicoreware/workspace/projects/PROJ )~~ をビルドしてます。
 
 # 簡単にビルドまでの手順を説明
 
@@ -14,11 +14,13 @@ Cmake・git・NASMのPachを登録しておく
 ①x265を保存する空フォルダを用意して、空フォルダ内でWindowsターミナル又はコマンドプロンプトを開き、
 ` git clone https://bitbucket.org/multicoreware/x265_git.git ` を実行してクローンを作成。(ここでgit必要)
 
-x265のテスト版?のビルドしたい場合は、` git clone https://bitbucket.org/multicoreware/x265_git_testing.git ` こっちを実行。(x265_git_testingってファイルが出来る)
+~~x265 古いやつ ` git clone https://bitbucket.org/multicoreware/x265_git.git `~~
+
+~~x265のテスト版?のビルドしたい場合は、` git clone https://bitbucket.org/multicoreware/x265_git_testing.git ` こっちを実行。(x265_git_testingってファイルが出来る)~~
 
 ②x265_gitってフォルダが作成されるので、`x265_git→build→vc17-x86_64`と移動。 
 
-③フォルダ内の`make-solutions.bat`をメモ帳で開き、 cmake -G "Visual Studio 17 2022" ..\..\source && cmake-gui ..\..\source を cmake -G "Visual Studio 18 2026" ..\..\source && cmake-gui ..\..\source に書き換え。 (Visual Studio 2022でビルドする場合は飛ばす)
+~~③フォルダ内の`make-solutions.bat`をメモ帳で開き、 cmake -G "Visual Studio 17 2022" ..\..\source && cmake-gui ..\..\source を cmake -G "Visual Studio 18 2026" ..\..\source && cmake-gui ..\..\source に書き換え。 (Visual Studio 2022でビルドする場合は飛ばす)~~
 
 ④フォルダ内の`make-solutions.bat`を実行。(ここでCmake必要)
 
