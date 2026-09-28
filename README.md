@@ -30,13 +30,13 @@ Cmake・git・NASMのPachを登録しておく
 
 ⑦出力logに `=========== ビルド は -:--:- で完了し、--.--- 秒 掛かりました ==========`  が表示されたら、Visual Studioを終了させる。
 
-⑧`x265_git→build→vc17-x86_64→Debug`のフォルダ内に`x265.exe`が作成されている。
+⑧`x265→build→vc18→Debug`のフォルダ内に`x265.exe`が作成されている。
 
 # Linux コマンド
 
 作成順は、linux→arm-linux→aarch64-linux
 
-① ~$ Desktop && sudo rm -r x265_git && git clone https://bitbucket.org/multicoreware/x265_git.git && x265_git && build &&  linux && ./make-Makefiles.bash && make
+① ~$ Desktop && sudo rm -r x265 && git clone https://bitbucket.org/multicoreware/x265_git.git && x265 && build &&  linux && ./make-Makefiles.bash && make
 
 ② ~$ .. && arm-linux && sudo chmod o+x make-Makefiles.bash && sudo ./make-Makefiles.bash && sudo make
 
