@@ -15,22 +15,32 @@ Register packages for CMake, git, and NASM
 
 ① Create an empty folder to save x265. Open Windows Terminal or Command Prompt inside this folder and run:
 
-` git clone https://bitbucket.org/multicoreware/x265_git.git] ` to clone the repository. (Requires Git here)
+` git clone https://github.com/Multicorewareinc/x265.git ` to clone the repository. (Requires Git here)
 
-If you want to build the x265 test version?, run `git clone https://bitbucket.org/multicoreware/x265_git_testing.git` instead. (A file named `x265_git_testing` will be created)
+② A folder named `x265` will be created. Navigate to `x265\build\vc18`. 
 
-② A folder named `x265_git` will be created. Navigate to `x265_git\build\vc17-x86_64`. 
+③ Run `make-solutions.bat` in the folder. (CMake is required here)
 
-~~③ Open `make-solutions.bat` in the folder with Notepad. Replace `cmake -G “Visual Studio 17 2022” ..\..\source && cmake-gui ..\..\source` with `cmake -G “Visual Studio 18 2026” ..\..\source && cmake-gui ..\..\source`. (Skip this step if building with Visual Studio 2022)~~
+④ When the CMake window opens, click `Configure`, then `Generate`, then `Open Project` to launch Visual Studio. (You can close the CMake window after Visual Studio launches)
 
-④ Run `make-solutions.bat` in the folder. (CMake is required here)
+⑤ After Visual Studio launches, click the `Build (B) tab` at the top of the window → `Build Solution (B)`.
 
-⑤ When the CMake window opens, click `Configure`, then `Generate`, then `Open Project` to launch Visual Studio. (You can close the CMake window after Visual Studio launches)
+⑥ When the output log displays `=========== Build completed at -:--:- and took --.--- seconds ==========`, close Visual Studio.
 
-⑥ After Visual Studio launches, click the `Build (B) tab` at the top of the window → `Build Solution (B)`.
+⑦`x265.exe` will be created in the `x265→build→vc18→Debug` folder.
 
-⑦ When the output log displays `=========== Build completed at -:--:- and took --.--- seconds ==========`, close Visual Studio.
+# Linux Command
 
-⑧`x265.exe` will be created in the `x265_git→build→vc17-x86_64→Debug` folder.
+Preparation Commands
+
+~$  sudo add-apt-repository ppa:git-core/ppa && sudo apt update && sudo apt install -y git cmake nasm cmake-curses-gui build-essential yasm git-all gcc-arm-linux-gnueabi g++-arm-linux-gnueabi gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+
+The order of creation is: linux → arm-linux → aarch64-linux
+
+① ~$ Desktop && sudo rm -r x265 && git clone https://github.com/Multicorewareinc/x265.git && cd x265 && build &&  linux && ./make-Makefiles.bash && make
+
+② ~$ .. && arm-linux && sudo chmod o+x make-Makefiles.bash && sudo ./make-Makefiles.bash && sudo make
+
+③ ~$ .. && aarch64-linux && ./make-Makefiles.bash && make
 
 Translated with DeepL.com (free version)
