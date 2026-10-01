@@ -1,5 +1,5 @@
 # x265
-x265 ( https://github.com/Multicorewareinc/x265 ) をビルドしてます。
+x265 ( https://github.com/Multicorewareinc/x265 ) をビルドしています。
 
 # 簡単にビルドまでの手順を説明
 
