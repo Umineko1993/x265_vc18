@@ -9,7 +9,7 @@ x265 ( https://github.com/Multicorewareinc/x265 ) をビルドしてます。
 > [Visual Studio 2026](https://visualstudio.microsoft.com/ja/downloads/)</br>
 > [NASM](https://nasm.us/)
 
-Cmake・git・NASMのPachを登録しておく
+Cmake・git・NASMのPathを登録しておく
 
 ①x265を保存する空フォルダを用意して、空フォルダ内でWindowsターミナル又はコマンドプロンプトを開き、
 ` git clone https://github.com/Multicorewareinc/x265.git ` を実行してクローンを作成。(ここでgit必要)
