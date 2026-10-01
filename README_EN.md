@@ -11,7 +11,7 @@ Required items
 > [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/)</br>
 > [NASM](https://nasm.us/)
 
-Register packages for CMake, git, and NASM
+Set the paths for CMake, Git, and NASM
 
 ① Create an empty folder to save x265. Open Windows Terminal or Command Prompt inside this folder and run:
 
