@@ -1,4 +1,4 @@
-# x265_x86_64
+# x265
 x265 ( https://github.com/Multicorewareinc/x265 ) をビルドしてます。
 
 # 簡単にビルドまでの手順を説明
