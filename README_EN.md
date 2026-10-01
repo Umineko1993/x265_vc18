@@ -1,6 +1,6 @@
-# x265_x86_64
+# x265
 
-Building x265_git ( https://github.com/Multicorewareinc/x265 ).
+Building x265 ( https://github.com/Multicorewareinc/x265 )
 
 # Brief steps to build
 
